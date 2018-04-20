@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 public class Shipwreck {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	Long id;
 	String name;
 	String description;

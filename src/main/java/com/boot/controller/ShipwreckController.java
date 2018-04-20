@@ -20,7 +20,7 @@ public class ShipwreckController {
         return shipwreckRepository.findAll();
     }
 
-    @RequestMapping(value = "shipwrecks/{id}", method = RequestMethod.POST)
+    @RequestMapping(value = "shipwrecks", method = RequestMethod.POST)
     public Shipwreck create(@RequestBody Shipwreck shipwreck) {
         return shipwreckRepository.saveAndFlush(shipwreck);
     }
